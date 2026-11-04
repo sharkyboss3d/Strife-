@@ -13,4 +13,3 @@ if player_id = 0
 {
 	x = room_width - 50
 }
-y = room_height - 200
