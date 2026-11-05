@@ -1,4 +1,4 @@
-var _input = rollback_get_input()
+var _input = NaN
 
 
 if _input.left or _input.right
