@@ -1,16 +1,13 @@
-var _input = NaN
-
-
-if _input.left or _input.right
+if keyboard_check(vk_left) or keyboard_check(vk_right)
 {
 	state = "run"
 	
-	if _input.left
+	if keyboard_check(vk_left)
 	{
 		xvel = -10
 		image_xscale = -2
 	}
-	if _input.right
+	if keyboard_check(vk_left)
 	{
 		xvel = 10
 		image_xscale = 2
@@ -19,7 +16,6 @@ if _input.left or _input.right
 } else
 {
 	state = "idle"
-	xvel *= 0.8
 }
 
 if place_meeting(x,y+yvel,oFloor) 
@@ -34,6 +30,7 @@ switch state
 {
 	case "idle":
 		sprite_index = sJohnidle
+		
 	break
 	
 	case "run":
