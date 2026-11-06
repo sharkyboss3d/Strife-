@@ -27,6 +27,7 @@
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"sFloor","path":"sprites/sFloor/sFloor.yy",},},
+    {"id":{"name":"sJohnhammer","path":"sprites/sJohnhammer/sJohnhammer.yy",},},
     {"id":{"name":"sJohnidle","path":"sprites/sJohnidle/sJohnidle.yy",},},
     {"id":{"name":"sJohnrun","path":"sprites/sJohnrun/sJohnrun.yy",},},
   ],

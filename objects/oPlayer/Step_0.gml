@@ -7,7 +7,7 @@ if keyboard_check(vk_left) or keyboard_check(vk_right)
 		xvel = -10
 		image_xscale = -2
 	}
-	if keyboard_check(vk_left)
+	if keyboard_check(vk_right)
 	{
 		xvel = 10
 		image_xscale = 2
@@ -16,6 +16,13 @@ if keyboard_check(vk_left) or keyboard_check(vk_right)
 } else
 {
 	state = "idle"
+	xvel *= 0.8
+}
+
+if keyboard_check(vk_up) && midair = false
+{
+	midair = true
+	yvel = -15
 }
 
 if place_meeting(x,y+yvel,oFloor) 
@@ -30,7 +37,6 @@ switch state
 {
 	case "idle":
 		sprite_index = sJohnidle
-		
 	break
 	
 	case "run":
@@ -43,7 +49,7 @@ switch state
 
 if midair = true
 {
-	yvel += 0.3
+	yvel += 1.2
 } else
 {
 	yvel = 0
@@ -51,3 +57,4 @@ if midair = true
 
 x+= xvel
 y += yvel
+
