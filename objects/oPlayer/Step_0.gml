@@ -41,6 +41,11 @@ if state = "hammer"
 	if image_index = 1
 	{
 		mask_index = sJohnhammer
+		if place_meeting(x,y,oDummy)
+		{
+			oDummy.xvel = 50
+			oDummy.yvel = -30
+		}
 	}
 }
 
