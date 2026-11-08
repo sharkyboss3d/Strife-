@@ -22,6 +22,7 @@
   },
   "name":"Strife",
   "resources":[
+    {"id":{"name":"oDummy","path":"objects/oDummy/oDummy.yy",},},
     {"id":{"name":"oFloor","path":"objects/oFloor/oFloor.yy",},},
     {"id":{"name":"oGame","path":"objects/oGame/oGame.yy",},},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},

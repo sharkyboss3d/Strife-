@@ -12,19 +12,22 @@ if keyboard_check(vk_left) or keyboard_check(vk_right)
 		xvel = 10
 		image_xscale = 2
 	}
-	
 } else
 {
 	state = "idle"
 	xvel *= 0.8
 }
 
-if keyboard_check(vk_up) && midair = false
+if keyboard_check(ord("Z"))
 {
-	midair = true
-	yvel = -15
+	state = "hammer"
+	if keyboard_check_pressed(ord("Z"))
+	{
+		image_index = 0
+	}
 }
 
+mask_index = sJohnidle
 if place_meeting(x,y+yvel,oFloor) 
 {
 	midair = false
@@ -33,14 +36,32 @@ if place_meeting(x,y+yvel,oFloor)
 	midair = true
 }
 
+if state = "hammer"
+{
+	if image_index = 1
+	{
+		mask_index = sJohnhammer
+		if place_meeting(x,y,oDummy)
+		{
+			oDummy.xvel = 50
+			oDummy.yvel = -30
+		}
+	}
+}
+
 switch state 
 {
 	case "idle":
 		sprite_index = sJohnidle
+		
 	break
 	
 	case "run":
 		sprite_index = sJohnrun
+	break
+	
+	case "hammer":
+		sprite_index = sJohnhammer
 	break
 	
 	default:
@@ -49,7 +70,7 @@ switch state
 
 if midair = true
 {
-	yvel += 1.2
+	yvel += 0.3
 } else
 {
 	yvel = 0
@@ -57,4 +78,3 @@ if midair = true
 
 x+= xvel
 y += yvel
-
