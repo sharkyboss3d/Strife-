@@ -8,7 +8,23 @@ if keyboard_check(vk_left) or keyboard_check(vk_right)
 
 if keyboard_check(ord("Z"))
 {
-	state = "hammer"
+	switch keyboard_key 
+	{
+		case vk_left or vk_right:
+			state = "sidetilt"
+		break
+		
+		case vk_up:
+			state = "uptilt"
+		break
+		
+		case vk_down:
+			state = "downtilt"
+		break 
+		          
+		default:
+			state = "jab"
+	}
 	
 }
 
@@ -39,8 +55,20 @@ switch state
 		scr_johnRun()
 	break
 	
-	case "hammer":
+	case "jab":
 		scr_johnJab()
+	break
+	
+	case "sidetilt":
+		scr_johnSidetilt()
+	break
+	
+	case "uptilt":
+		scr_johnUptilt()
+	break
+	
+	case "downtilt":
+		scr_johnDowntilt()
 	break
 	
 	default:

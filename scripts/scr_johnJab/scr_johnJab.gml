@@ -1,14 +1,16 @@
 function scr_johnJab(){
-	if sprite_index != sJohnhammer
+	if sprite_index != sJohnJab
 	{
-		sprite_index = sJohnhammer
+		repeathit = true
+		sprite_index = sJohnJab
 		image_index = 0
 		ds_list_clear(hit)
 	}
 	
-	if image_index = 1
+	if image_index >= 2
 	{
-		mask_index = sJohnhammer
+		repeathit = false
+		mask_index = sJohnJab
 		var hitNow = ds_list_create()
 		var hits = instance_place_list(x,y,oDummy,hitNow,false)
 		if hits > 0
@@ -19,11 +21,14 @@ function scr_johnJab(){
 				if ds_list_find_index(hit,hitID) == -1
 				{
 					ds_list_add(hit,hitID)
-					hitID.xvel = 5 * sign(xvel)
-					hitID.yvel = -30
+					hitID.xvel = 11 * sign(xvel)
+					hitID.yvel = -17
 				}
 				
 			}
 		}
+	} else if repeathit = false
+	{
+		state = "idle"
 	}
 }
