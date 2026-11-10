@@ -1,4 +1,4 @@
-if keyboard_check(vk_left) or keyboard_check(vk_right)
+if (keyboard_check(vk_left) or keyboard_check(vk_right)) && state != "jab" && state != "sidetilt" && state != "uptilt" && state != "downtilt"
 {
 	state = "run"
 } else
@@ -6,25 +6,21 @@ if keyboard_check(vk_left) or keyboard_check(vk_right)
 	xvel *= 0.8
 }
 
-if keyboard_check(ord("Z"))
+if keyboard_check_pressed(ord("Z"))
 {
-	switch keyboard_key 
-	{
-		case vk_left or vk_right:
+		if keyboard_check(vk_left) or keyboard_check(vk_right)
+		{
 			state = "sidetilt"
-		break
-		
-		case vk_up:
+		}else if keyboard_check(vk_up)
+		{
 			state = "uptilt"
-		break
-		
-		case vk_down:
+		}else if keyboard_check(vk_down)
+		{
 			state = "downtilt"
-		break 
-		          
-		default:
+		}else
+		{
 			state = "jab"
-	}
+		}
 	
 }
 
@@ -38,10 +34,12 @@ if place_meeting(x,y+yvel,oFloor)
 }
 
 
-
-if not(keyboard_check(ord("Z")) or keyboard_check(vk_left) or keyboard_check(vk_right) or keyboard_check(vk_up))
+if  state != "jab" and state != "sidetilt" and state != "uptilt" and state != "downtilt"
 {
-	state = "idle"
+	if not(keyboard_check(ord("Z")) or keyboard_check(vk_left) or keyboard_check(vk_right) or keyboard_check(vk_up))
+	{
+		state = "idle"
+	}
 }
 
 switch state 

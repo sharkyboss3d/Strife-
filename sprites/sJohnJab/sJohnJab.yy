@@ -13,10 +13,10 @@
   "For3D":false,
   "frames":[
     {"$GMSpriteFrame":"v1","%Name":"eaa4506d-1288-421b-8c29-de3514178c84","name":"eaa4506d-1288-421b-8c29-de3514178c84","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"494edd9f-58a7-4d3d-baf2-718d6d53a3bc","name":"494edd9f-58a7-4d3d-baf2-718d6d53a3bc","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"v1","%Name":"012c01a8-56d0-4c9c-8c00-694c66e9f5f6","name":"012c01a8-56d0-4c9c-8c00-694c66e9f5f6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"v1","%Name":"ec76511e-8cea-42d6-aa67-6da97e0e5d55","name":"ec76511e-8cea-42d6-aa67-6da97e0e5d55","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"v1","%Name":"35e9f219-8001-4fde-9126-50a29dcea8e1","name":"35e9f219-8001-4fde-9126-50a29dcea8e1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"494edd9f-58a7-4d3d-baf2-718d6d53a3bc","name":"494edd9f-58a7-4d3d-baf2-718d6d53a3bc","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -80,17 +80,17 @@
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"eaa4506d-1288-421b-8c29-de3514178c84","path":"sprites/sJohnJab/sJohnJab.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"ca9300b0-8e24-4d3f-bb8d-5721d55ca517","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"494edd9f-58a7-4d3d-baf2-718d6d53a3bc","path":"sprites/sJohnJab/sJohnJab.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"12608213-416f-4082-b279-5d62e75eeb6c","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"012c01a8-56d0-4c9c-8c00-694c66e9f5f6","path":"sprites/sJohnJab/sJohnJab.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"58115dc4-3271-4288-9a56-662bc7698bf5","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+              },"Disabled":false,"id":"58115dc4-3271-4288-9a56-662bc7698bf5","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"ec76511e-8cea-42d6-aa67-6da97e0e5d55","path":"sprites/sJohnJab/sJohnJab.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"9930fd02-7008-41b8-a3d0-0ac876d248b4","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+              },"Disabled":false,"id":"9930fd02-7008-41b8-a3d0-0ac876d248b4","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"35e9f219-8001-4fde-9126-50a29dcea8e1","path":"sprites/sJohnJab/sJohnJab.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"d4450a94-e3fc-44b5-bcfe-622094f06e21","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"494edd9f-58a7-4d3d-baf2-718d6d53a3bc","path":"sprites/sJohnJab/sJohnJab.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"12608213-416f-4082-b279-5d62e75eeb6c","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+              },"Disabled":false,"id":"d4450a94-e3fc-44b5-bcfe-622094f06e21","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
