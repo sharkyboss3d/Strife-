@@ -41,6 +41,7 @@
     {"id":{"name":"sJohnJab","path":"sprites/sJohnJab/sJohnJab.yy",},},
     {"id":{"name":"sJohnrun","path":"sprites/sJohnrun/sJohnrun.yy",},},
     {"id":{"name":"sJohnSidetilt","path":"sprites/sJohnSidetilt/sJohnSidetilt.yy",},},
+    {"id":{"name":"sJohnUptilt","path":"sprites/sJohnUptilt/sJohnUptilt.yy",},},
     {"id":{"name":"sKeyboard","path":"sprites/sKeyboard/sKeyboard.yy",},},
   ],
   "resourceType":"GMProject",

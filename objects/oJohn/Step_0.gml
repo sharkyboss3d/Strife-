@@ -6,6 +6,13 @@ if (keyboard_check(vk_left) or keyboard_check(vk_right)) && state != "jab" && st
 	xvel *= 0.8
 }
 
+if keyboard_check_pressed(vk_up)
+{
+	midair = true
+	yvel = -10
+	state = "jump"
+}
+
 if keyboard_check_pressed(ord("Z"))
 {
 		if keyboard_check(vk_left) or keyboard_check(vk_right)
@@ -23,6 +30,7 @@ if keyboard_check_pressed(ord("Z"))
 		}
 	
 }
+
 
 mask_index = sJohnidle
 if place_meeting(x,y+yvel,oFloor) 
@@ -75,7 +83,7 @@ switch state
 
 if midair = true
 {
-	yvel += 0.3
+	yvel += 1.2
 } else
 {
 	yvel = 0
